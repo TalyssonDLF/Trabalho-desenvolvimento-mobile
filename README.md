@@ -9,7 +9,7 @@ Aplicativo Android acadêmico desenvolvido para a disciplina de Desenvolvimento 
 - Navigation Compose (`NavHost` + `NavController`)
 - `mutableStateListOf` para estado em memória
 - Android SDK 35 / minSdk 24
-- JDK 17
+- Gradle executado com JDK 21 (o código Android permanece com compatibilidade Java 17)
 
 ## Telas
 
@@ -39,12 +39,12 @@ app/src/main/java/com/example/lojavisual/
 
 1. Clone ou baixe este repositório.
 2. Abra a pasta raiz no Android Studio.
-3. Aguarde o Gradle Sync.
-4. Utilize JDK 17 e instale o SDK 35 se solicitado.
+3. Configure o **Gradle JDK como 21** caso o Android Studio não faça isso automaticamente.
+4. Aguarde o Gradle Sync e instale o SDK 35 se solicitado.
 5. Inicie um emulador Android ou conecte um dispositivo.
 6. Clique em **Run ▶**.
 
-Também existe um workflow de CI em `.github/workflows/android.yml` que executa `./gradlew assembleDebug` a cada push na `main`.
+Também existe um workflow de CI em `.github/workflows/android.yml` que executa `./gradlew assembleDebug` a cada push na `main`. O build do projeto foi validado com sucesso no GitHub Actions.
 
 ## Como testar o trabalho
 
@@ -65,6 +65,6 @@ Conforme o enunciado, **não há banco de dados**. Produtos, cupons e carrinho f
 
 ## Documentação do processo
 
-A evolução do Trabalho 1, decisões técnicas, dificuldades e checklist do enunciado estão em [`docs/PROCESSO.md`](docs/PROCESSO.md).
+A evolução do Trabalho 1, decisões técnicas, dificuldades, checklist do enunciado e o roteiro dos prints estão em [`docs/PROCESSO.md`](docs/PROCESSO.md).
 
 > O pagamento é apenas visual/demonstrativo. Não existe cobrança real, backend ou integração financeira.
