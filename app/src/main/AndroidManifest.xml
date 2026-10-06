@@ -8,8 +8,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaVisual">
 
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".ProductActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
